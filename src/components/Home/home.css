@@ -1,43 +1,4 @@
 .home-container {
   background: linear-gradient(102deg, #c4c4c4 50%, #000000 50%);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.presentation-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px;
-  width: 100%;
-}
-
-.name {
-  color: #000000;
-}
-
-.degree {
-  color: #909090;
-}
-
-.links-container {
-  display: flex;
-  margin-top: 3%;
-}
-
-.image-container {
-  display: inline-block;
-  transition: transform 0.3s, filter 0.3s;
-  margin: 0 10px;
-}
-
-.image-container:hover {
-  transform: scale(1.2);
-  filter: brightness(1.1);
-  cursor: pointer;
-}
-
-.image-container:active {
-  transform: translate() scale(0.95);
-  filter: brightness(0.8);
 }
