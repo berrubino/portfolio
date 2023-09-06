@@ -20,8 +20,8 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
       <div className="container">
-        <Navbar />
         <Box
           sx={{
             ...(isDesktop
