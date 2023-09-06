@@ -13,6 +13,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../../assets/Logo.svg";
 import "../Navbar/navbar.css";
+import { Link } from "react-router-dom";
 
 const pages = ["About me", "Skills", "Projects", "Contact me"];
 function Navbar() {
@@ -104,6 +105,7 @@ function Navbar() {
               {pages.map((page) => (
                 <Button
                   key={page}
+                  href={`/#${page.toLowerCase().replace(" ", "-")}`}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,

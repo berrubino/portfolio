@@ -2,6 +2,7 @@ import React from "react";
 import "../AboutMe/aboutMe.css";
 import { Box, Typography } from "@mui/material";
 import blackSeparator from "../../assets/blackSeparator.svg";
+import Navbar from "../Navbar/Navbar";
 
 function AboutMe() {
   return (
@@ -19,26 +20,16 @@ function AboutMe() {
             width: "70vw",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at
-          fuga iusto! Nulla magnam facere sed iusto nam odit, dicta quidem et
-          eum saepe voluptate fugiat? Odit quos accusamus distinctio? Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          doloribus aliquid repellendus fuga ab provident, fugit, libero
-          voluptatum vero natus distinctio nulla numquam at, labore
-          necessitatibus ex et reprehenderit itaque. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Accusamus sint molestias inventore.
-          Modi, aperiam ratione. Autem, odit soluta. Mollitia necessitatibus
-          rerum ipsam id. Maiores adipisci officia quos dolorum. Veritatis,
-          in?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet,
-          aperiam ad! Quis, accusamus minus! Beatae, animi, laborum doloribus
-          minus temporibus at nemo enim consequuntur amet exercitationem quis
-          reiciendis veniam suscipit?Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Doloribus voluptas saepe nobis omnis maxime autem
-          hic, laboriosam voluptatem iusto in tempora officiis corporis
-          explicabo veniam expedita eum, assumenda sequi! Necessitatibus? Lorem
-          ipsum, dolor sit amet consectetur adipisicing elit. Dolore odit
-          repellat, odio soluta ab natus numquam officiis eius placeat modi
-          saepe sapiente vitae suscipit! Nobis quisquam non error maxime soluta.
+          Soy Bernardo, tengo 26 años y estoy dando mis primeros pasos en el
+          mundo del desarrollo. Después de mucho tiempo buscando una carrera que
+          me apasione y finalmente encontré en el desarrollo de software una
+          oportunidad emocionante. A lo largo de mi vida, he explorado diversas
+          áreas y he adquirido habilidades en comunicación, organización y
+          planificación, las cuales considero fundamentales para mi desarrollo
+          profesional. Además, he valorado la importancia de brindar un
+          excelente servicio al cliente y de adaptarme rápidamente a diferentes
+          situaciones. Estoy ansioso por explorar nuevas tecnologías, aprender
+          de los desafíos y crecer profesionalmente
         </Typography>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>

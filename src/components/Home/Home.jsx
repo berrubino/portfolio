@@ -37,8 +37,8 @@ function Home() {
                     ? {
                         display: "flex",
                         flexDirection: "column",
-                        marginLeft: "2vw",
                         justifyContent: "center",
+                        marginLeft: "12vw",
                         color: "black",
                         minHeight: "94vh",
                       }
@@ -56,7 +56,11 @@ function Home() {
           <Typography
             sx={{
               fontFamily: "Advent Pro, sans-serif",
-              fontSize: "39px",
+              ...(isMobile
+                ? { fontSize: "4vw" }
+                : {
+                    fontSize: "2.6vw",
+                  }),
             }}
           >
             My name is Bernardo Rubino
@@ -65,8 +69,14 @@ function Home() {
           <Typography
             sx={{
               fontFamily: "Montserrat, sans-serif",
-              fontSize: "46px",
               fontWeight: "bold",
+              ...(isMobile
+                ? {
+                    fontSize: "5vw",
+                  }
+                : {
+                    fontSize: "3.2vw",
+                  }),
             }}
           >
             Full-stack developer
@@ -111,7 +121,9 @@ function Home() {
           </Box>
         </Box>
       </div>
-      <AboutMe />
+      <div id="about-me">
+        <AboutMe />
+      </div>
     </div>
   );
 }
