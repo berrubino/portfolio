@@ -34,7 +34,7 @@ function AboutMe() {
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
-          className="blackSeparator"
+          className="aboutMe-blackSeparator"
           src={blackSeparator}
           alt="black separator"
         />

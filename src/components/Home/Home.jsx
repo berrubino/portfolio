@@ -10,6 +10,7 @@ import blackEmailLogo from "../../assets/blackEmailLogo.svg";
 import blackGithubLogo from "../../assets/blackGithubLogo.svg";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import AboutMe from "../AboutMe/AboutMe";
+import Skills from "../Skills/Skills";
 
 function Home() {
   const isMobile = useMediaQuery("(max-width: 1023px)");
@@ -123,6 +124,9 @@ function Home() {
       </div>
       <div id="about-me">
         <AboutMe />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
     </div>
   );
