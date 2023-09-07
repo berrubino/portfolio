@@ -22,7 +22,7 @@
 
 @media (max-width: 1023px) {
   .container {
-    background-image: url("../../assets/Background.svg");
+    background-image: url("../../assets/background/Background.svg");
     background-size: cover;
     background-position: center;
   }
