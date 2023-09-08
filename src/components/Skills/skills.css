@@ -1,8 +1,7 @@
 .skills-container {
   background: linear-gradient(to right, #c4c4c4, #ffffff, #c4c4c4);
-  /* Cambia los colores (#ff0000 y #0000ff) según tus preferencias */
-  background-attachment: fixed; /* Esto mantiene el fondo fijo al desplazar la página */
-  background-repeat: no-repeat; /* Esto evita que se repita el gradiente */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -20,7 +19,7 @@
   padding: 3vw;
 }
 
-.skills-languages {
+.skills-subtitles {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 3vw;
@@ -31,9 +30,40 @@
   width: 6vw;
   margin-top: 3vw;
   margin-left: 3vw;
+  margin-bottom: 2vh;
+  transition: transform 0.3s ease;
 }
 
 .skills-blackSeparator {
   margin-top: 12vh;
   width: 20vw;
+}
+
+.icon-container {
+  display: inline-block;
+  text-align: center;
+  margin-right: 2vw;
+  transition: transform 0.3s ease;
+}
+
+.icon-text {
+  font-family: Advent Pro, sans-serif;
+  font-weight: bold;
+  display: none;
+  text-align: center;
+  position: absolute;
+  bottom: -1.5vw;
+  left: 3vw;
+  right: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container:hover .icon-text {
+  display: block;
+  opacity: 1;
+}
+
+.icon-container:hover,
+.icon-container:hover .skills-icons-styles {
+  transform: scale(1.1);
 }
