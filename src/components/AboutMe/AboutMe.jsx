@@ -2,7 +2,6 @@ import React from "react";
 import "../AboutMe/aboutMe.css";
 import { Box, Typography } from "@mui/material";
 import blackSeparator from "../../assets/blackSeparator.svg";
-import Navbar from "../Navbar/Navbar";
 
 function AboutMe() {
   return (
@@ -34,7 +33,7 @@ function AboutMe() {
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
-          className="blackSeparator"
+          className="aboutMe-blackSeparator"
           src={blackSeparator}
           alt="black separator"
         />

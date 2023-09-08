@@ -2,14 +2,15 @@ import React from "react";
 import "../Home/home.css";
 import Navbar from "../Navbar/Navbar";
 import separator from "../../assets/separator.svg";
-import whiteEmailLogo from "../../assets/whiteEmailLogo.svg";
-import whiteGithubLogo from "../../assets/whiteGithubLogo.svg";
-import whiteLinkedinLogo from "../../assets/whiteLinkedinLogo.svg";
-import blackLinkedinLogo from "../../assets/blackLinkedinLogo.svg";
-import blackEmailLogo from "../../assets/blackEmailLogo.svg";
-import blackGithubLogo from "../../assets/blackGithubLogo.svg";
+import whiteEmailLogo from "../../assets/socialMedia/white/whiteEmailLogo.svg";
+import whiteGithubLogo from "../../assets/socialMedia/white/whiteGithubLogo.svg";
+import whiteLinkedinLogo from "../../assets/socialMedia/white/whiteLinkedinLogo.svg";
+import blackLinkedinLogo from "../../assets/socialMedia/black/blackLinkedinLogo.svg";
+import blackEmailLogo from "../../assets/socialMedia/black/blackEmailLogo.svg";
+import blackGithubLogo from "../../assets/socialMedia/black/blackGithubLogo.svg";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import AboutMe from "../AboutMe/AboutMe";
+import Skills from "../Skills/Skills";
 
 function Home() {
   const isMobile = useMediaQuery("(max-width: 1023px)");
@@ -123,6 +124,9 @@ function Home() {
       </div>
       <div id="about-me">
         <AboutMe />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
     </div>
   );
