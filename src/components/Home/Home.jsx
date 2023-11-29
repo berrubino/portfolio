@@ -11,6 +11,7 @@ import blackGithubLogo from "../../assets/socialMedia/black/blackGithubLogo.svg"
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
 
 function Home() {
   const isMobile = useMediaQuery("(max-width: 1023px)");
@@ -127,6 +128,9 @@ function Home() {
       </div>
       <div id="skills">
         <Skills />
+      </div>
+      <div id="projects">
+        <Projects />
       </div>
     </div>
   );
