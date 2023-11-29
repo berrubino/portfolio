@@ -6,26 +6,23 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import defaultimage from "../../assets/background/Background.svg";
+import defaultImage from "../../assets/background/Background.svg";
+import "../pojects-cards/projectCards.css";
 
-function ProjectsCards() {
+function ProjectsCards({ project }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className="card">
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={defaultimage}
-          alt="green iguana"
+          image={project.image || defaultImage}
         />
-        <CardContent>
+        <CardContent sx={{ background: "black", color: "white" }}>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {project.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          <Typography variant="body2">{project.description}</Typography>
         </CardContent>
       </CardActionArea>
     </Card>
